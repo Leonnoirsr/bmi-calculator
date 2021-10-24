@@ -18,10 +18,11 @@
 
 
 const markMass = document.querySelector('.person-1-weight-text');
-const johnMass = document.querySelector('.person-2-weight-text');
-
 const markHeight = document.querySelector('.person-1-height-text');
+
+
 const johnHeight = document.querySelector('.person-2-height-text');
+const johnMass = document.querySelector('.person-2-weight-text');
 
 const submitOne = document.querySelector('.button-1');
 const submitTwo = document.querySelector('.button-2');
