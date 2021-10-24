@@ -26,6 +26,9 @@ const johnHeight = document.querySelector('.person-2-height-text');
 const submitOne = document.querySelector('.button-1');
 const submitTwo = document.querySelector('.button-2');
 
+
+const bmiTwo = document.getElementById('bmi-2')
+
 const mark = {
   name: "Mark",
     mass : 78,
@@ -44,5 +47,12 @@ const getBMI = (person) => {
   let name = person.name
   let height = person.height
   let weight = person.mass
-console.log(`${name}'s height is ${height} and his weight is ${weight} `)
 };
+
+
+submitOne.addEventListener('click', () => {
+  const bmiOne = document.getElementById('bmi-1')
+  getBMI(mark);
+  bmiOne.innerText = `${mark.name}'s height is ${mark.height} and his weight is ${mark.mass} `
+
+})
