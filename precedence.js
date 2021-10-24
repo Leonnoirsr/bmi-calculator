@@ -46,22 +46,27 @@ name: "John",
 
 
 const getBMI = (person) => {
-  const name = person.name
-  const height = person.height
-  const weight = person.mass
+  console.log(person);
   
   bmiResults();
 };
 
 // This will show the results on the screen.
 const bmiResults = () => {
-  console.log("working");
+
   // bmi.innerText = `${person.name}'s height is ${person.height} and his weight is ${person.mass} `;
 }
 
-// This is fot Mark
-submitOne.addEventListener('click', (mark) => {
-  mark.height = markHeight.value;
-  mark.mass = markWeight.value;
+// This is for Mark
+submitOne.addEventListener('click', () => {
+  mark.height = Number(markHeight.value);
+  mark.mass = Number(markWeight.value);
   getBMI(mark);
+})
+
+// This is for John
+submitOne.addEventListener('click', () => {
+  john.height = Number(markHeight.value);
+  john.mass = Number(markWeight.value);
+  getBMI(john);
 })
