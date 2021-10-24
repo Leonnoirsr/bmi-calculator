@@ -64,9 +64,9 @@ submitOne.addEventListener('click', () => {
   getBMI(mark, bmiOne);
 })
 
-// This is for John
-submitTwo.addEventListener('click', () => {
-  john.height = Number(markHeight.value);
-  john.mass = Number(markWeight.value);
-  getBMI(john, bmiTwo);
-})
+// // This is for John
+// submitTwo.addEventListener('click', () => {
+//   john.height = Number(johnHeight.value);
+//   john.mass = Number(johnWeight.value);
+//   getBMI(john, bmiTwo);
+// })
