@@ -45,28 +45,28 @@ name: "John",
 
 
 
-const getBMI = (person) => {
-  console.log(person);
-  
-  bmiResults();
+const getBMI = (person, para) => {
+  // We needed the calucation of the BMI.
+  const calulatedBMI = person.mass / person.height ** 2;
+  // Showing the results in the the innerText.
+  bmiResults(person, para, calulatedBMI);
 };
 
 // This will show the results on the screen.
-const bmiResults = () => {
-
-  // bmi.innerText = `${person.name}'s height is ${person.height} and his weight is ${person.mass} `;
+const bmiResults = (person, para, calculatedBMI) => {
+  para.innerText = `${person.name}'s BMI is ${calculatedBMI}.`;
 }
 
 // This is for Mark
 submitOne.addEventListener('click', () => {
   mark.height = Number(markHeight.value);
   mark.mass = Number(markWeight.value);
-  getBMI(mark);
+  getBMI(mark, bmiOne);
 })
 
 // This is for John
-submitOne.addEventListener('click', () => {
+submitTwo.addEventListener('click', () => {
   john.height = Number(markHeight.value);
   john.mass = Number(markWeight.value);
-  getBMI(john);
+  getBMI(john, bmiTwo);
 })
