@@ -17,12 +17,6 @@
 // GOOD LUCK �
 
 
-// const markMass = 78
-// const johnMass = 92
-
-// const markHeight = 1.69
-// const johnHeight = 1.95
-
 const markMass = document.querySelector('.person-1-weight-text');
 const johnMass = document.querySelector('.person-2-weight-text');
 
@@ -33,11 +27,13 @@ const submitOne = document.querySelector('.button-1');
 const submitTwo = document.querySelector('.button-2');
 
 const mark = {
+  name: "Mark",
     mass : 78,
     height: 1.69
 }
 
 const john = {
+name: "John",
     mass: 92,
     height: 1.95
 }
@@ -45,8 +41,8 @@ const john = {
 
 
 const getBMI = (person) => {
+  let name = person.name
   let height = person.height
   let weight = person.mass
-
-  console.log(`${person}'s height is ${person.height} and their weight is ${person.weight} `)
+console.log(`${name}'s height is ${height} and his weight is ${weight} `)
 };
