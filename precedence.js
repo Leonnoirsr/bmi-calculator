@@ -20,6 +20,7 @@
 // Mark
 const markHeight = document.querySelector('.person-1-height-text');
 const markWeight = document.querySelector('.person-1-weight-text');
+
 // John
 const johnHeight = document.querySelector('.person-2-height-text');
 const johnWeight = document.querySelector('.person-2-weight-text');
@@ -48,4 +49,12 @@ submitOne.addEventListener('click', () => {
   const userHeight = Number(markHeight.value);
   const userMass = Number(markWeight.value);
   getBMI("Mark", userHeight, userMass, bmiOne);
+})
+
+
+// This is for Mark
+submitTwo.addEventListener('click', () => {
+  const userHeight = Number(johnHeight.value);
+  const userMass = Number(johnWeight.value);
+  getBMI("John", userHeight, userMass, bmiTwo);
 })
