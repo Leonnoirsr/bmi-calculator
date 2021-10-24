@@ -1,0 +1,70 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+   
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    margin-top: 150px;
+    text-align: center;
+}
+
+input {
+    height: 1.5rem;
+    outline: none;
+    margin: .3rem;
+    border-radius: 60px;
+    text-align: center;
+
+}
+
+button {
+    position: relative;
+    right: 50px;
+    margin-top: 10px;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    outline: none;
+    background: #ee6c4d;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.container {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-1 {
+    background-color: #3d5a80;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 20px;
+    height: 250px;
+    width: 500px;
+ 
+}
+.person-2 {
+    background-color: #98c1d9;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 20px;
+    height: 250px;
+    width: 500px;
+    
+}
+
